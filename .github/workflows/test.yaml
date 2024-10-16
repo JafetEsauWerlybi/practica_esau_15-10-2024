@@ -19,7 +19,9 @@ jobs:
                     echo "Hola mundo esau jsj" >> hola.txt
                     ls -al
             - name: Read File
-              run: cat hola.txt
+              run:  |
+                    cat hola.txt
+                    ls -al
               
     dos:
         runs-on: ubuntu-latest
